@@ -13,7 +13,8 @@ jobs:
       security-events: write
       actions: read
       contents: read
-
+      matrix:
+        language: ['javascript-typescript', 'python']
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
